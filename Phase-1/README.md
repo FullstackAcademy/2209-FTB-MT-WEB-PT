@@ -6,10 +6,10 @@ _Our aim is build semantically sound, responsive webpages that can react to user
 
 ## [Week 1](./week-1/) 
 ### Concepts
-- [HTML elements and attributes](./week-1/module-1/lecture.md)
+- [HTML elements and attributes](./week-1/module-1/README.md)
 - Semantic HTML `main`, `section`, `footer`, `header` 
-- [Box Model, Sizing, Backgrounds and Borders](./module-2/lecture.md)
-- [CSS Flow, Floats and Positioning](./module-3/lecture.md) 
+- [Box Model, Sizing, Backgrounds and Borders](./module-2/README.md)
+- [CSS Flow, Floats and Positioning](./module-3/README.md) 
 ### Project - [Personal Site](https://learn.fullstackacademy.com/workshop/5e29d2cd1f75040004050af8/content/5e2b04111d3259000442027b/text)
 
 ## Week 2
