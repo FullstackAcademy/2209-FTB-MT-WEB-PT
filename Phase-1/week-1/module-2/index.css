@@ -1,0 +1,16 @@
+        :root{
+            font-size: 2px;
+        }
+        .blue {
+            border: 2px solid hsl(240, 100%, 50%);
+            border-radius: 10px 50px 30px 40px;
+            width: 50vw;
+        }
+        .red {
+            height: 150vh;
+            background-image: url('https://cdn.shopify.com/s/files/1/0094/8617/2265/files/shutterstock_388719256_1280x720_94c64b32-4007-4282-a14b-dfb36c94a048.jpg?v=1568179175');
+        }
+          .yellow {
+              background-color: yellow;
+  
+          }
