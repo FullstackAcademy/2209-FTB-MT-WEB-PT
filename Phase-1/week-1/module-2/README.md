@@ -49,6 +49,7 @@
 - ```html 
 <link rel="stylesheet" href="index.css" />
 ```
+
 - CSS
   - 3 ways of defining css (we'll get to more in JavaScript, but these are a few basics)
     - Inline - `<h1 style="background-color: red"></h1>`
