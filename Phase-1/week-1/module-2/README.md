@@ -8,7 +8,7 @@
 ## Quick Review: Selectors
 
 ## Business 
-1. First Graded Project is due the week Sunday 10pm local time.
+1. First Graded Project is due the week Sunr    day 10pm local time.
 - Projects are to assess your progress and foundations 
 2. Phase 1 Outline 
 3. Documentation 
@@ -64,8 +64,11 @@
   - Selectors
     - Parent-child relationship
     - Class vs id
-    - combining class & id
+    - combining class & id -> 
     - `selector > selector` vs `selector selector` vs `selector.selector`
+    - Descendant combinator The " " (space) combinator selects nodes that are descendants of the first element. Syntax: A B Example: div span will match all <span> elements that are inside a <div> element.
+    - Child combinator
+The > combinator selects nodes that are direct children of the first element. Syntax: A > B Example: ul > li will match all <li> elements that are nested directly inside a <ul> element.
   - Box Model
     - Everything is a box.  Relationships to each other is defined as such.
     - Many different `display` options. (block, inline, none, flex, grid)
