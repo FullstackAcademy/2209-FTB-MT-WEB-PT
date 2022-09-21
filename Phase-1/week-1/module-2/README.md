@@ -46,7 +46,8 @@
     - `border-radius`
 - linking your css and html
 - importing CSS 'https://fonts.googleapis.com/css?family=Gelasio|Open+Sans&display=swap'
-- ```html 
+
+```html 
 <link rel="stylesheet" href="index.css" />
 ```
 
