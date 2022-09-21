@@ -1,16 +1,149 @@
-        :root{
-            font-size: 2px;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;1,8..144,300;1,8..144,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Raleway&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;1,8..144,300;1,8..144,400&display=swap');
+       /* Root directory */
+       * {
+            padding: 0;
+            margin: 0;
+            font-size: 40px;
         }
-        .blue {
-            border: 2px solid hsl(240, 100%, 50%);
-            border-radius: 10px 50px 30px 40px;
+        
+        /* Every single element in css is a box 
+        * if you dont do anything to the box the space will take up
+        100% of the webpage and content.
+        * If you add different things to the box you can
+        start expanding the space of the box. One way is through padding
+        i.e PADDING: 20px; everything gets pushed away
+        form the content by 20pixels is used to add background to the element;
+        BORDER The border of the element.
+        MARGIN is for spacing two elements apart from one another.
+        If two elements have margins, the greater one would be taken to determine
+        the spacing between the two elements.
+        */
+        .box-one{
+           background-color: red;
+           padding: 20px;
+           border: 30px solid yellow;
+           margin: 60px;
+        }
+        .box-two {
+            background-color: blue;
+            height: 100px;
+            width: 80px;
+            padding: 10px;
+            border: 15px solid green;
+            margin: 70px;
+        }
+         /* CSS DISPLAY PROPERTY 
+        *display block takes the max space
+        *display inline takes the minimum space possible.
+        
+        *Block
+        Takes up the entire line 
+        width generally spans 100% of container 
+        width and height can be defined.
+        Examples h1, p, header, main, footer 
+        
+        *Inline
+        No new line.
+        width and height don't apply
+        Vertical padding, margins,and borders will apply but will not cause other inline boxes to 
+        move away from the box. Horizontal padding, margins, and borders will apply and will cause 
+        other inline boxes to move away from the box.
+        */
+        .box-three {
+            display: inline;
+            background-color: red;;
+        }
+        .box-four {
+            display: inline;
+            background-color: aqua;
+        }
+        /* MARGIN 0 auto 0 auto makes it so you can center 
+        NEEDS A WIDTH For it to work */
+        .box-five {
+            display: block;
+            background-color: bisque;
+            width: 100px;
+            margin: 0 auto 0 auto;
+        }
+
+        /* pixel vs percentage unit
+        * pixel absolute width which will always be the same 
+        * Percentage is going to be a percentage width based of its parents size
+        width 50% takes half of the page
+        width: 100px only takes 100 px of the page.
+
+        border radius in parent, rounding 25px, or 25%;
+        */
+        .box-six {
+            display: block;
+            background-color: brown;
+            width: 50%;
+
+        }
+        .box-seven {
+            background-color:cornflowerblue;
+            width: 100px;
+        }
+        /* parent */
+        .parent {
+            width: 135px;
+            border: 3px solid black;
+            margin: 40px auto;
+            border-radius: 25px;
+           
+        }
+        .box-eight {
+            background-color: red;
+            width:50%;
+        }
+        .box-nine {
+            background-color: green;
+            width: 135px;
+        }
+        /* VH VW 
+        vw 100 takes the entire width percent of the screen
+        50 would take 50%. Based on entire screen size NOT parent
+       
+        vh 25 percent of the SCREEN SIZE not parent
+
+        Color guide
+        Use https://color.adobe.com/create
+        rgb to hex https://www.rgbtohex.net/
+
+        */
+
+        .box-ten {
+            background-color: aquamarine;
             width: 50vw;
         }
-        .red {
-            height: 150vh;
-            background-image: url('https://cdn.shopify.com/s/files/1/0094/8617/2265/files/shutterstock_388719256_1280x720_94c64b32-4007-4282-a14b-dfb36c94a048.jpg?v=1568179175');
+        .box-eleven {
+            background-color: blanchedalmond;
+            height: 25vh;
         }
-          .yellow {
-              background-color: yellow;
-  
-          }
+
+        /* REM VS EM 
+        REM relative to root (is BODY) font size
+        EM relative to the parent size.
+        2 em twice the size of the parent size
+        2 rem means twice the size of the root size
+        */
+        .parent-2 {
+            font-size: 20px;
+        }
+     
+        .child-em {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2em;
+            margin: 1.5em;
+        }
+        .child-rem {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            margin: 1.5rem;
+        }
+
+
+
+
+
