@@ -8,7 +8,7 @@
 ## Quick Review: Selectors
 
 ## Business 
-1. First Graded Project is due the week Sunr    day 10pm local time.
+1. First Graded Project is due the week Sunday 10pm local time.
 - Projects are to assess your progress and foundations 
 2. Phase 1 Outline 
 3. Documentation 
