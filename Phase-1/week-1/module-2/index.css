@@ -25,6 +25,12 @@
            border: 30px solid yellow;
            margin: 60px;
         }
+        /* an ID is only used to identify one single element in our HTML. 
+        IDs are only used when one element on the page should have a particular style applied to it. However, a class can be used to identify more than one HTML element. */
+        #test-id{
+        background-color: crimson;
+
+        }
         .box-two {
             background-color: blue;
             height: 100px;
