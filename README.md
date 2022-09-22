@@ -1,5 +1,5 @@
-# 2209-FTB-ET-WEB-PT
-This is the GitHub repository for 2209-ftb-et-web-pt! We are going to push all relevant code to this repo. This will allow you to look back on code examples, and anything else we find pertinent.
+# 2209-FTB-MT-WEB-PT
+This is the GitHub repository for 2209-ftb-mt-web-pt! We are going to push all relevant code to this repo. This will allow you to look back on code examples, and anything else we find pertinent.
 
 ## Using
 
