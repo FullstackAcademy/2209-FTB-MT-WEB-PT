@@ -1,0 +1,69 @@
+/* POSITION 
+static- position is the default position.
+follow the other elements in the document flow. Child One goes first then child two.
+
+relative position: acts as the static position but you can change
+the top,left,right,bottom. Takes the elemets out of elements flow and pushes it
+how ever many pixels you said.
+
+i.e 
+position:relative;
+left:10px;
+
+absolute position: completely removes the element from the element flow and everything
+else renders as if that element does not exists.
+
+position: absolute;
+
+i.e remove child one in HTML and add it back and you can see child two is behind
+and pretends like child one does not exists
+
+this would be helpful when you want to stick an element in a position but you dont want
+anything else around it to move.
+
+if you top:0px it would go all to the top because it absolutetly puts the element inside of a parents
+container that it can reference. 
+
+since the .parent is position static it cant have anything else position static or absolutely to it
+
+if you make .parent position: relative now the absolute element is relative to the parent
+
+fixed: similar to absolute, fixed based on the entire html element. Removes elements
+from document work flow the same way as absolute positioning. Moves as you scroll the page.
+
+sticky: combination of relative and fixed position into one. As you scroll it will become fixed
+to the top of our page.
+*/
+
+.parent{
+background-color: #1e90ff;
+padding: 5px;
+font-size: 40px;
+
+/*after introducing absolute */
+position: relative;
+
+/* for fixed */
+height: 200vh;
+}
+
+.child {
+    padding: 5px;
+}
+
+.child-one {
+background-color: #e8f48c;
+position: sticky;
+top:0;
+/* for fixed*/
+right: 0;
+
+}
+
+.child-two {
+ background-color: #ff69b4;
+}
+
+.child-three {
+    background-color: #dda0dd;
+}
