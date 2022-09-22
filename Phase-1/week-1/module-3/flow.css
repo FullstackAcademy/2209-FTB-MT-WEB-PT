@@ -1,0 +1,38 @@
+/* Any elements that are floating will be taken out of its normal flow of the docuements
+any elements after will wrap around them.
+
+float: left, reading left to right
+float:right, reading right to left
+
+If you would like a stopping point where your elements are no longer floating,
+you can use the clear property
+
+clear on the paragraph to stop it from floating
+clear:left, right, both
+*/
+
+img {
+float: left;
+}
+
+p {
+    font-size: 30px;
+    clear:both;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: blue;
+    width: 100%;
+    height: 50px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: grey;
+    width: 100%;
+
+  }
