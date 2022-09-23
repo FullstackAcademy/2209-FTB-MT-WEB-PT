@@ -61,5 +61,3 @@ Flow, Floats, Positioning, overflow, Touch of Pseudoclasses (Hover and active)
 
 [Workshop Link](https://learn.fullstackacademy.com/workshop/5e2f06f4f06d2e0004f200f1/landing)
 
-HEY BRENDAN Talk about Box-sizing
-Talk about Overflow 
