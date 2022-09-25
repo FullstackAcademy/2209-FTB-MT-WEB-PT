@@ -1,17 +1,19 @@
 /* POSITION 
-static- position is the default position.
+STATIC- position is the default position.
 follow the other elements in the document flow. Child One goes first then child two.
 
-relative position: acts as the static position but you can change
+RELATIVE position: acts as the static position but you can change
 the top,left,right,bottom. Takes the elemets out of elements flow and pushes it
-how ever many pixels you said.
+how ever many pixels you said.2. relative : Same as static. But lets you add top, right, bottom, left.
+ Makes it move relative to it's normal position
 
 i.e 
 position:relative;
 left:10px;
 
-absolute position: completely removes the element from the element flow and everything
-else renders as if that element does not exists.
+ABSOLUTE position: completely removes the element from the element flow and everything
+else renders as if that element does not exists.Removes from the flow and positions absolute
+wrt to the parent. Parent has to be relative or absolute for top, right, bottom, left to work. Else it considers the main html element as the  parent .
 
 position: absolute;
 
@@ -28,11 +30,14 @@ since the .parent is position static it cant have anything else position static 
 
 if you make .parent position: relative now the absolute element is relative to the parent
 
-fixed: similar to absolute, fixed based on the entire html element. Removes elements
+FIXED: similar to absolute, fixed based on the entire html element. Removes elements
 from document work flow the same way as absolute positioning. Moves as you scroll the page.
+Fixed to a place. Doesn't care about the parent element. Always considers html element as the parent. 
+Stays there when scrolled.
 
-sticky: combination of relative and fixed position into one. As you scroll it will become fixed
-to the top of our page.
+STICKY: combination of relative and fixed position into one. As you scroll it will become fixed
+to the top of our page. Relative ( when normal) + fixed ( when scrolled). The values for top, 
+right, bottom, left become active when scrolled
 */
 
 .parent{
