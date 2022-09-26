@@ -1,0 +1,93 @@
+/*
+Creating complex layouts in a dynamic container using columns and rows.
+
+Display flex, all boxed would should up in a row. You can adjust the flexibility of the container
+depending on the size of the page. Box size will adjust, without having to individually style
+each flexbox.
+ 
+Display: flex *** MANDATORY if you want to use flexboxes***
+
+Goes in the container.
+
+SET DIRECTION: 
+
+Property in Container that you can set wether you want it to be a flex-direction of a row
+or a columns layout.
+
+flex-direction: row; flex-direction: column;
+
+If we want to style the elements on the horizontally, we would want to style using JUSTIFY.
+
+Justify-content:flex-start; all our elements use flext start by default
+
+justifify-content: center. Moves the items to be centered.
+
+justify-content: space-between to create space between them.
+
+justify-content: space-around . to give equal amount of space between them
+
+Main axis if your flex-direction is row is going to be horizontal whereas your cross axis will be vertical.
+
+Opposite for flex-direction: column.
+
+To align content in cross axis use align-items.
+
+Items would be by default in align-items: stretch; which is take the most space possible.
+
+Then align-items:flex-start align to the top of the vertical axis.
+
+align-item: flex-end align the the bottom of the vertical axis.
+
+align-item: center, to the center of the cross axis.
+
+flex-shrink: 0; on an item will prevent the item from shrinking when the browser changes sizes.
+
+flex-grow: 1; thrid item takes all the extra spaces no matter the size of the browser.
+
+flex-grow: 2;  all the extra space divides it by the the two items that have flex grow. 
+                flex-box-item 2 will get twice the amount flex-box-item-3 gets.
+
+flex-basis: 0; tells the items where to start growing from. If you add it to item 2- to item 3, 
+flex box item 2 is exactly twice as big as flex item 3 because it started adding additional space
+onto them in a two to one propotion. 
+
+flex-flow: row wrap   Wrap in a new line if it doesnt fit in the page
+flex-flow: row-reverse nowrap; 
+
+flex-flow: column wrap-reverse;
+
+flex-flow: column wrap;
+
+*/
+*{
+    background-color: #333;
+
+}
+.flexbox-container{
+    display:flex;
+    background-color: yellow;
+    flex-flow: column wrap;
+}
+
+.flexbox-item {
+width: 200px;
+margin: 10px;
+border: 3px solid #333;
+background-color: #dfdfdf;
+color: black;
+}
+
+.flexbox-item-1 {
+min-height: 100px;
+
+flex-shrink: 0;
+}
+.flexbox-item-2 {
+min-height: 200px;
+
+}
+
+.flexbox-item-3{
+min-height: 300px;
+}
+
