@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100i,300,400,500,800&display=swap');
+
+* {
+  font-family: 'Montserrat';
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  border: .1rem solid turquoise;
+  padding: 1rem;
+  background-color: rgb(62, 59, 59);
+  color: white;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+main nav {
+  border: .1rem solid purple;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: flex-start;
+}
+main a {
+  width: 5rem;
+  border: .1rem solid peru;
+  text-align: center;
+  margin: .5rem 0rem;
+}
+
+.dog-list-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fluid-text {
+  font-size: 2rem;
+}
+
+.desktop-nav {
+  display:block;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.single-dog-card {
+  padding: 1rem;
+  flex-basis: 15rem;
+  border: 2px solid peru;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.single-dog-card img {
+  width: 15rem;
+  display: block;
+}
+
+a {
+  color: white;
+}
+
+.mobile-nav ul {
+  position: absolute;
+  right: 1rem;
+  background-color: rgb(62, 59, 59);
+  display: none;
+}
+.mobile-nav:hover ul {
+  display: block;
+  border: 1px solid white;
+  padding: .2rem;
+}
+.mobile-nav li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+/* 
+at 650px 
+1. smaller site header 
+2. replace the desktop nav mobile-nav
+3. Make the single-dog-cards take up the whole page
+*/
+@media screen and (max-width: 650px) {
+  .fluid-text {
+    font-size:  1rem;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .single-dog-card {
+    margin: .5rem;
+    flex-basis: 100%;
+  }
+}
+
+/* 
+at 300px
+1. make the single dog cards real small 
+*/
+
+@media screen and (max-width: 500px) {
+  main nav {
+    display: none;
+  }
+}
