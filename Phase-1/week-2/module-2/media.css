@@ -1,0 +1,49 @@
+body {
+    color: red;
+}
+
+.title {
+    font-size: 6rem;
+}
+
+.subtitle {
+    font-size: 4rem;
+}
+/* Any time of screen and anything thats less than 500
+pixels wide change the text to blue */
+
+/* if we move 
+body {
+    color: red;
+}
+ under the media the text will always be red because 
+ its reading from top to bottom essentially just ignores the media
+ 
+ IMPORTANT, YOU ALWAYS WANT THE MEDIA TO BE LAST*/
+
+@media all and (max-width: 500px) {
+    body {
+     color: blue
+    }
+  }
+/* Color changes to yello when printing */
+  @media print {
+      body {
+          color:yellow;
+      }
+  }
+  /* 
+  Can add (min-width: 500px)
+  */
+
+  @media (orientation: landscape) {
+    .title{
+        color: green;
+    }
+   } 
+
+   @media (orientation: portrait) {
+ .subtitle{
+     color: cyan;
+ }
+   }
