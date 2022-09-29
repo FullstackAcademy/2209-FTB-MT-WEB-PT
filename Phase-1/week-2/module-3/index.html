@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Elements that are direct children*/
+        span > b {
+            background-color: red;
+        }
+        /* any level of child does not have to be direct child*/
+        span  b {
+            background-color: red;
+        }
+        /* Pseudo Class: Only if the cursor is hobering over the element*/
+        ul li:hover {
+            text-decoration: underline;
+        }
+        /* Where elements are positioned on the page*/
+        li:first-child {
+            background-color: blue;
+        }
+        li:last-child {
+            background-color: green;
+        }
+        /* Selects every other element */
+        li:nth-child(2n){
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    /* Selects every third element */
+        li:nth-child(3n){
+            background-color: orange;
+        }
+        /* Selects every second element, but its going to start at the first element
+        instead of the second*/
+        li:nth-child(2n-1){
+            text-align: center;
+        }
+        /* same thing but starts from the bottom */
+        li:nth-last-child(2n-1){
+            text-align: right;
+        }
+        /*ant element that does not have the class of red*/
+        li:not(.red){
+            text-decoration: underline;
+
+        }
+
+        /*first of type very first element inside of the spans, no 
+        matter how many spans there is will be aqua */
+        span:first-of-type{
+            background-color: aqua;
+        }
+        li:last-of-type{
+            font-size:  200%;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">This is a div</div>
+    <span id="blue"> This is a span</span>
+
+    <div>
+        <span>
+            <b> Nested Text</b>
+        </span>
+
+    </div>
+    <ul>
+        <li class="red">Item 1</li>
+        <li> Item 2</li>
+        <li> Item 3</li>
+        <li> Item 4</li>
+    </ul>
+    
+</body>
+</html>
