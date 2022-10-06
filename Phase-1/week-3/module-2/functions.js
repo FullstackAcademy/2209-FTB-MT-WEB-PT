@@ -25,7 +25,6 @@ MovieConditions(false, true, 3.00);
 // https://codepen.io/FullstackAcademy/pen/EEKXWB?editors=0010
 
 // workshop countdown
-// https://learn.fullstackacademy.com/workshop/6099fa22b4a8360004b0cec1/landing
 
 // Workshop Control Flow, Boolean Logic, functions
 // https://learn.fullstackacademy.com/workshop/609be7fad8e5d500044cd601/landing
