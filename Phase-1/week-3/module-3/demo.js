@@ -123,5 +123,5 @@ function sumOfAll(num){  //3
   return sum; 
 }
 
-console.log(onlyOdds(9));
+console.log(sumOfAll(10));
 
