@@ -27,6 +27,8 @@ console.log("isMyInputAnArray, input Customers ===> ", isMyInputAnArray(customer
 
 //Part C: Bracket Access
 console.log('\n', '\n', '*************Bracket Access*************', '\n');
+const firstCustomer = customers[0];// Katy 
+
 let firstReward = rewards[0];
 console.log("What is the first reward? ", firstReward)
 
@@ -44,6 +46,8 @@ console.log("Reward Drawing result ONE ==>", rewardDrawing(rewards, 1));
 //Part D: Bracket assignment - Rewards out of stock
 console.log('\n', '\n', '*************Bracket Assignment*************', '\n');
 rewards[1] = 'can opener';
+// customers[] = 'Kathy'; THIS WILL GIVE YOU ERROR 
+// customers = ['Kathy']; THIS WILL Change the entire customers array to ['Kathy']; 
 
 console.log("Updated Rewards==>", rewards);
 console.log("Reward Drawing result TWO  ==>", rewardDrawing(rewards, 1));
@@ -51,8 +55,8 @@ console.log("Reward Drawing result TWO  ==>", rewardDrawing(rewards, 1));
 //Part E: .length property - Do I have enough rewards?
 console.log('\n', '\n', '*************.LENGTH*************', '\n');
 function enoughRewards(rewardsArr, customersArr) {
-  const rewardsAvailable = rewardsArr.length - 1;
-  const numOfCustomers = customersArr.length - 1;
+  const rewardsAvailable = rewardsArr.length;
+  const numOfCustomers = customersArr.length;
 
   if (rewardsAvailable === numOfCustomers) {
     return 'Just enough rewards for each customer'
