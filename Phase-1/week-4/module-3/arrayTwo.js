@@ -40,6 +40,16 @@ console.log('Big concat with small animals ', bigSmallConcatTogether);
 
 
 //Part D: 2-dimensional array
+
+const arr = [
+  [
+    ['windows', 'word'],
+    ['mac', 'page']
+  ]
+]
+const macEditor = arr[0][1][1];
+console.log("mac Editor?", macEditor)
+
 /*
 The outer array contains all dogs[[],[],[],[]]
 Each element within the array represents a single dog info
