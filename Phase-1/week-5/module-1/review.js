@@ -13,9 +13,13 @@ let testNumThree = 5;
 let testNumFour = 8;
 
 //Two different ways to verify your function, console.log within function, or console.log the invoked function
-const savedCalc = addTwoNums(testNumFour, testNumThree);
-console.log("Saved Calc", savedCalc);
-console.log("Logging from outside", addTwoNums(testNumTwo, testNumOne));
+const savedCalc = addTwoNums(testNumFour, testNumThree); //13
+const savedCalc2 = addTwoNums(testNumFour, testNumOne);// 10
+
+console.log("Saved Calc", savedCalc); //13
+console.log("addTwoNums", addTwoNums(testNumTwo, testNumOne));//5
+console.log("Add two Saved Calc", addTwoNums(savedCalc, savedCalc2));//23
+
 
 /*************************** String Review *****************************/
 let sentence = 'Hello Programming';
