@@ -37,6 +37,23 @@ function checkIfCharExists(str, char) {
 }
 console.log("checkIfCharExist", checkIfCharExists(sentence, 'x'));
 
+//Changing the above function to check two chracters instead of just one character 
+
+function checkIfCharExists2(str, char) {
+  for (let i = 0; i < str.length; i++) {
+    let currentChar = str[i] + str[i + 1];
+    console.log("currentChar", currentChar)
+
+    if (currentChar === char) {
+      console.log("i", i, str.length)
+      return true;
+    }
+  }
+
+  return false;
+}
+// console.log("checkIfCharExist-Check Two Characters", checkIfCharExists2(sentence, 'mm'));
+
 /*************************** Array Review *****************************/
 const numArr = [2, 3, 5, 5, 2, 3, 1]; //add to 21
 //How to find out what is the number on index 4
@@ -55,3 +72,17 @@ function addNumsInArr(arr) {
 };
 
 console.log("addNumsInArr", addNumsInArr(numArr));
+
+//Check if a number exist in array, instead of using a for loop, we can use an array method
+//Refer back to the string function, and compare. 
+function checkIfANumExistInMyArray(arr, num) {
+
+  if (arr.includes(num)) {
+    return true;
+  }
+  return false;
+}
+console.log("checkIfANumExistInMyArray", checkIfANumExistInMyArray(numArr, 2));//true
+console.log("checkIfANumExistInMyArray", checkIfANumExistInMyArray(numArr, 100));//false
+
+
