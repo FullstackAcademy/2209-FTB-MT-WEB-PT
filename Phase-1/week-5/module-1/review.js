@@ -1,5 +1,3 @@
-/* eslint-disable no-extra-semi */
-/* eslint-disable quotes */
 /*************************** Function Review *****************************/
 //How to define a function? What is inputs, argument and parameters?
 function addTwoNums(numOne, numTwo) {
