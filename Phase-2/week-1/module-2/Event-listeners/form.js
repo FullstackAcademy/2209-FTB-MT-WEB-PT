@@ -4,17 +4,15 @@ var itemList = document.getElementById('items');
 
 form.addEventListener('submit', addItem);
 
-filter.addEventListener('keyup', filterItems);
-
-itemList.addEventListener('click', removeItem);
 function addItem(e){
     e.preventDefault();
-    console.log('here')
 
     // Get input value
     var newItem = document.getElementById('item').value;
 
-    //Create new LI element
+    console.log(newItem);
+
+    //Create new li element
 
     var li = document.createElement('li');
     
@@ -34,7 +32,11 @@ function addItem(e){
     li.appendChild(button);
     itemList.appendChild(li);
 }
+
+itemList.addEventListener('click', removeItem);
+
 function removeItem(e){
+    
     e.preventDefault();
 
     if(e.target.classList.contains('delete')){
@@ -47,6 +49,7 @@ function removeItem(e){
     }
 
 }
+filter.addEventListener('keyup', filterItems);
 
 function filterItems(e){
     e.preventDefault();
