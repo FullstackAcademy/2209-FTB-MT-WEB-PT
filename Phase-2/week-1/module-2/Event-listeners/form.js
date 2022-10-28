@@ -1,4 +1,4 @@
-var form = document.getElementById('addForm');
+var form = document.getElementById('addItems');
 
 var itemList = document.getElementById('items');
 
