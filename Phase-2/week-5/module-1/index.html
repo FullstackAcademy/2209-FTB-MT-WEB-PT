@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        #board {
+            box-shadow: 2px 2px 2px 2px black;
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+        }
+        .square {
+            box-sizing: border-box;
+            border: 1px solid black;
+            flex-basis: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .taken {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="board"></div>
+</body>
+<script src="arrayMethods.js"></script>
+</html>
