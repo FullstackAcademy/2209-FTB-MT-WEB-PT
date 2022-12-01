@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background: #777;
+}
+
+#app {
+  height: 100vh;
+  padding: 18px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 18px;
+  height: 100%;
+}
+
+.app > * {
+  background: #fff;
+  border-radius: 6px;
+  border: 4px solid #333;
+  box-shadow: 0 8px 12px -4px black;
+  padding: 8px;
+  overflow-y: scroll;
+}
+
+.profile {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.dark-mode {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.dark-mode.dark {
+  background: #222;
+  color: #ddd;
+}
+
+.dark-mode.light {
+  background: #ddd;
+  color: #222;
+}
+
+.tic-tac-toe {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.todo {
+  grid-column: 2;
+  grid-row: 2;
+}

@@ -1,0 +1,30 @@
+.tic-tac-toe {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  margin-top: 24px;
+  grid-template-rows: repeat(3, 64px);
+  grid-template-columns: repeat(3, 64px);
+}
+
+.board .cell {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.board .cell:nth-of-type(n+4):nth-of-type(-n+6) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.board .cell:nth-of-type(3n+2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
