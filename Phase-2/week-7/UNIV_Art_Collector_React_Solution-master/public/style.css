@@ -1,0 +1,293 @@
+/**
+ * It is very likely you don't need to change this file. 
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Roboto|Playfair+Display|Roboto+Condensed&display=swap');
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-gap: 8px;
+  
+  height: 100%;
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #444;
+}
+
+#title {
+  grid-row: 1;
+  background-color: steelblue;
+  grid-column: 1 / -1;
+  padding: 8px;
+  text-align: center;
+  color: white;
+}
+
+#title h1 {
+  font-family: 'Parisienne', cursive;
+  font-size: 3.2rem;
+}
+
+#title h5 {
+  font-size: 1rem;
+}
+
+#search {
+  grid-row: 2;
+  grid-column: 1 / -1;
+
+  padding: 8px;
+  
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: minmax(300px, 1fr) 240px 240px 100px;
+  
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+
+  background: #ccc;
+  border-bottom: 1px solid black;
+}
+
+#search fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+#search fieldset label {
+  margin-bottom: .5em;
+  font-size: 1.2em;
+}
+
+#search fieldset label span {
+  margin-bottom: .5em;
+  font-size: .8em;
+  font-weight: bold;
+  color: maroon;
+  margin-left: 4px;
+}
+
+#search select {
+  padding: 4px;
+  width: 100%;
+  height: 32px;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+#search option {
+  font-weight: normal;
+}
+
+#search input,
+#search button {
+  padding: 4px 8px;
+  width: 100%;
+  height: 32px;
+
+  font-size: 1em;
+
+  border: 1px solid black;
+}
+
+#search button {
+  align-self: flex-end;
+}
+
+#preview, 
+#feature {
+  font-family: 'Playfair Display', serif;
+}
+
+#preview {
+  grid-column: 1;
+  grid-row: 3;
+
+  background: #eee;
+
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  overflow-y: hidden;
+}
+
+#preview .pagination {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 8px;
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+
+.pagination button {
+  padding: 4px 12px;
+  font-size: 1rem;
+  background: steelblue;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background: #cccccc;
+  color: #ffffff;
+  cursor: none;
+}
+
+.results {
+  min-height: 0;
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.results .object-preview {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 2px 6px -3px black;
+  padding: 8px;
+  background:white;
+}
+
+.results .object-preview:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.results .object-preview img {
+  width: 100%;
+}
+
+#feature {
+  grid-column: 2;
+  grid-row: 3;
+
+  padding: 8px;
+  display: flex;
+
+  background: #ddd;
+  overflow: hidden;
+}
+
+.object-feature {
+  flex-grow: 1;
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) 420px;
+  grid-template-rows: auto minmax(0, 1fr);
+
+  background: #fff;
+  box-shadow: 0 4px 12px -3px black;
+}
+
+.object-feature > * {
+  padding: 8px;
+}
+
+.object-feature header {
+  grid-row: 1;
+  grid-column: 1 / -1;
+
+  background: steelblue;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  border-bottom: 1px solid black;
+
+  font-size: 1.4rem;
+}
+
+.object-feature .facts {
+  grid-row: 2;
+  grid-column: 1;
+
+  min-height: 0;
+  overflow-y: scroll;
+
+  font-size: 1.2rem;
+
+  display: grid;
+  grid-gap: 4px 12px;
+  grid-template-columns: max-content minmax(0, 1fr);
+  grid-template-rows: repeat(auto-fill, 2em);
+}
+
+.object-feature .facts .title {
+  grid-column: 1;
+  font-weight: 900;
+}
+
+.object-feature .facts .content {
+  grid-column: 2;
+  font-weight: 100;
+}
+
+.object-feature .photos {
+  grid-row: 2;
+  grid-column: 2;
+
+  padding: 8px;
+  overflow-y: scroll;
+}
+
+.object-feature img {
+  width: 100%;
+}
+
+.object-feature img:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+#loading {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.4);
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#loading .message {
+  min-width: 480px;
+  padding: 3rem;
+
+  box-shadow: 0 2px 8px black;
+  background: white;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
