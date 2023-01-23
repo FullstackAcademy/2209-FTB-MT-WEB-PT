@@ -1,0 +1,17 @@
+{
+  "name": "day_01",
+  "version": "1.0.0",
+  "description": "## Day 01 - Intro to TDD - Small intro - 2 functions, Tests for each - The project   - Demo an empty project & failing tests   - Demo the completed project with all passing tests - Second demo - Understanding Database Tests - Tests for the methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest  --runInBand --verbose",
+    "test:watch": "jest --watchAll --runInBand --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.4.2",
+    "pg": "^8.3.3"
+  }
+}
