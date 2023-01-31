@@ -12,7 +12,7 @@ const dropAndCreateTables = async () => {
     `)
     await client.query(`
       CREATE TABLE users(
-        id  SERIAL PRIMARY KEY, 
+        id SERIAL PRIMARY KEY, 
         username VARCHAR(255) UNIQUE NOT NULL, 
         password VARCHAR(255) NOT NULL
       );
@@ -22,7 +22,7 @@ const dropAndCreateTables = async () => {
   }
 }
 
-const createUser = async ({ username, password}) => {
+const createUser = async ({ username, password }) => {
   try {
     const {rows: [user]} = await client.query(`
       INSERT INTO users(username, password) VALUES ($1, $2)
